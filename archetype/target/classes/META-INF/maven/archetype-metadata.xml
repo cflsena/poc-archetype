@@ -7,7 +7,6 @@
       <directory></directory>
       <includes>
         <include>.gitignore</include>
-        <include>docker-compose.yaml</include>
         <include>Dockerfile</include>
       </includes>
     </fileSet>
