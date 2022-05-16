@@ -13,7 +13,11 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import ${package}._common.BaseIT;
 import ${package}.application.port.out.ExampleRepositoryPort;
+import ${package}.db.model.ExampleModel;
 
+import java.util.UUID;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -29,7 +33,10 @@ class ExampleControllerIT extends BaseIT {
     @Test
     @DisplayName("Create your E2E test from this controller")
     void test01() {
-        assertTrue(true);
+        final var uuid = UUID.randomUUID();
+        final var exampleModel = new ExampleModel(uuid, "test");
+        assertEquals(uuid, exampleModel.getId());
+        assertEquals("test", exampleModel.getName());
     }
 
 }

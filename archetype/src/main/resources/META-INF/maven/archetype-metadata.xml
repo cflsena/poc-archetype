@@ -7,6 +7,7 @@
       <directory></directory>
       <includes>
         <include>.gitignore</include>
+        <include>docker-compose.yaml</include>
         <include>Dockerfile</include>
       </includes>
     </fileSet>
@@ -89,5 +90,6 @@
         </fileSet>
       </fileSets>
     </module>
+    <module id="test-report" dir="test-report" name="test-report" />
   </modules>
 </archetype-descriptor>
