@@ -7,7 +7,6 @@
       <directory></directory>
       <includes>
         <include>.gitignore</include>
-        <include>docker-compose.yaml</include>
         <include>Dockerfile</include>
       </includes>
     </fileSet>
@@ -15,7 +14,7 @@
   <modules>
     <module id="contract" dir="contract" name="contract">
       <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -25,7 +24,7 @@
     </module>
     <module id="core" dir="core" name="core">
       <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -37,7 +36,7 @@
             <include>**/*.properties</include>
           </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/test/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -47,7 +46,7 @@
     </module>
     <module id="client" dir="client" name="client">
       <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -57,7 +56,7 @@
     </module>
     <module id="adapters" dir="adapters" name="adapters">
       <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -76,7 +75,7 @@
             <include>**/*.sql</include>
           </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
           <directory>src/test/java</directory>
           <includes>
             <include>**/*.java</include>
@@ -90,6 +89,6 @@
         </fileSet>
       </fileSets>
     </module>
-    <module id="test-report" dir="test-report" name="test-report" />
+    <module id="coverage-report" dir="coverage-report" name="coverage-report" />
   </modules>
 </archetype-descriptor>

@@ -41,7 +41,7 @@
     
     
     
-    <spring.boot.version>2.6.5</spring.boot.version>
+    <spring.boot.version>2.6.7</spring.boot.version>
                             
     
     
@@ -623,7 +623,7 @@
     <module>adapters</module>
           
     
-    <module>test-report</module>
+    <module>coverage-report</module>
       
   </modules>
         
