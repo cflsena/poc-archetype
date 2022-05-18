@@ -92,10 +92,6 @@ Por fim, execute o passo de instalação novamente e faça commit and push do ar
 - Qualquer alteração que seja necessária neste template, deverá ser feita no **projeto modelo** (link)
 - É muito importante seguir os padrões de **groupId**, **artifactId**, **packages** etc, descritos neste README, para que todos os microsserviços gerados estejam no mesmo padrão.
 
-
-
-
-
-
-
-
+| Versão | Descrição           | Solicitante                  | Data         |
+|:-------|:--------------------|:-----------------------------|:-------------|
+| 1.0.0  | Estrutura inicial   | Bruno Chiaroni               | 18/05/2022   |
